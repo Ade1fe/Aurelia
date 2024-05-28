@@ -1,0 +1,1 @@
+export {default as heroCompImg} from './images/single-glass-bottle-filled-with-clear-liquid-generated-by-ai.jpg';
