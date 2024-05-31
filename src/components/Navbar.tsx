@@ -8,12 +8,14 @@ interface NavbarProps {
 }
 const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   const { isOpen, onToggle } = useDisclosure()
-  // const bgColor = isScrolled ? 'gray.800' : 'transparent';
+  const bgColor = isScrolled ? 'white' : 'transparent';
+  const color = isScrolled ? 'black' : 'white';
   const backdropFilter = isScrolled ? 'blur(5px)' : 'none';
 
 
   return (
-    <Box display={['flex', 'flex']}
+   <Box className="">
+     <Box display={['flex', 'flex']}
     shadow='md'
     pos='fixed'
     top='0'
@@ -21,17 +23,18 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
     justifyContent='space-between'
     alignItems='center'
     w='full'
-    color='white'
-    // bg={bgColor} 
+    px={['15px', '20px', '24px', '3.6rem', '7rem']}
+    color={color}
+    bg={bgColor} 
     style={{ backdropFilter: backdropFilter }} 
     transition="all 0.3s ease">
       <Text textShadow='1px 1px pink' className='tangerine-regular' fontSize={['x-large', 'xx-large', 'xxx-large']}>Aurelia</Text>
-      <Box className="title" fontSize={['md', 'lg', 'x-large']} display={['none', 'none', 'flex']}  gap='3'>
+      <Box className="title"  fontSize={['md', 'lg', 'x-large']} display={['none', 'none', 'flex']}  gap={['4', '5', '6', '7', '8']}>
         <Text>Home</Text>
         <Text>About us</Text>
         <Text>Shop us</Text>
       </Box>
-      <Box display={['none', 'none', 'flex']} gap='3'>
+      <Box display={['none', 'none', 'flex']} gap={['4', '5', '6', '7', '8']}>
         <Text><Icon as={BiSearch} boxSize={['6', '7', '8']} /></Text>
         <Text><Icon as={BsCartDash} boxSize={['6', '7', '8']} /></Text>
         <Text><Icon as={BiUserCircle} boxSize={['6', '7', '8']} /></Text>
@@ -42,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         <Text display={['block', 'block', 'none']} cursor="pointer" onClick={onToggle}><Icon as={BsList} boxSize={[8,9,10]} /></Text>
       )}
       {isOpen && (
-        <Box position="absolute" top="100%" right="0"  backgroundColor="transparent" boxShadow="lg" p="4" zIndex="999" w='full' transition="all 0.3s ease-in-out">
+        <Box position="absolute"   backdropFilter='blur(10px)' top="100%" right="0"     bg={bgColor} color={color}  boxShadow="lg" p="4" zIndex="999" w='full' transition="all 0.3s ease-in-out">
           <Text my='0.5rem'>Home</Text>
           <Text my='0.5rem'>About us</Text>
           <Text my='0.5rem'>Shop us</Text>
@@ -52,6 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         </Box>
       )}
     </Box>
+   </Box>
   )
 }
 

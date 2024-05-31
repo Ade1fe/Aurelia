@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box } from '@chakra-ui/react';
-import { HeroComp, Navbar } from '../..';
+import { BestSeller, BundlePacks, HeroComp, Navbar } from '../..';
+import Categories from '../categories/Categories';
 
 const Homepage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,9 @@ const Homepage = () => {
     <Box mx='auto'>
       <Navbar isScrolled={isScrolled} />
       <HeroComp />
-    
+      <Categories />
+      <BundlePacks />
+      <BestSeller />
     </Box>
   );
 };

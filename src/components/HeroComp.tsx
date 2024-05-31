@@ -1,4 +1,4 @@
-import { Box, Icon, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Icon, Image, Text } from '@chakra-ui/react'
 import { BiBus } from 'react-icons/bi'
 import { BsHeadset } from 'react-icons/bs'
 import { TbTruckReturn } from 'react-icons/tb'
@@ -16,6 +16,7 @@ const HeroComp = () => {
   <Text>
     Discover a sanctuary for skincare enthusiasts, where <Text as="span" fontStyle="italic">beauty</Text> meets <Text as="span" fontStyle="italic">science</Text>, and self-care reaches <Text as="span" fontStyle="italic">new heights</Text>.
   </Text>
+  <Button mt='2rem' bg='#DDB892' _hover={{bg: "#7F5539"}} color='white' mb='1rem' w='200px'> shop now</Button>
 </Box>
       <Box
         position='absolute'
