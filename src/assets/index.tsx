@@ -2,7 +2,7 @@ export {default as heroCompImg} from './images/single-glass-bottle-filled-with-c
 export {default as lotionImg} from './images/single-glass-bottle-filled-with-clear-liquid-generated-by-ai.jpg';
 export {default as shampoImg} from './images/front-view-black-plastic-bottle-from-shampoo-with-pink-strip.jpg';
 export {default as sectImg} from './images/zero-waste-beauty-products.jpg';
-// export {default as heroCompIm} from './images/single-glass-bottle-filled-with-clear-liquid-generated-by-ai.jpg';
+export {default as backgroundBrown} from './images/4186539.jpg';
 // export {default as heroCompIm} from './images/single-glass-bottle-filled-with-clear-liquid-generated-by-ai.jpg';
 // export {default as heroCompIm} from './images/single-glass-bottle-filled-with-clear-liquid-generated-by-ai.jpg';
 // export {default as heroCompIm} from './images/single-glass-bottle-filled-with-clear-liquid-generated-by-ai.jpg';
