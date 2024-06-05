@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   return (
    <Box className="">
      <Box display={['flex', 'flex']}
-    shadow='md'
+    // shadow='md'
     pos='fixed'
     top='0'
     zIndex='9'

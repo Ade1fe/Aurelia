@@ -1,4 +1,5 @@
-// export {default as AboutUs} from './bookmarked/BookmarkContext';
+// export {default as FeedbackComp} from './bookmarked/BookmarkContext';
+export {default as FeedbackComp} from './components/FeedbackComp';
 export {default as AboutUs} from './components/AboutUs';
 export {default as WhyChooseUs}  from './components/WhyChooseUs';
 export {default as BestSeller}  from './pages/best-seller/BestSeller';

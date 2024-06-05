@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Box } from '@chakra-ui/react';
-import { AboutUs, BestSeller, BundlePacks, HeroComp, Navbar, WhyChooseUs } from '../..';
+import { AboutUs, BestSeller, BundlePacks, FeedbackComp, HeroComp, Navbar, WhyChooseUs } from '../..';
 import Categories from '../categories/Categories';
 
 const Homepage = () => {
@@ -30,6 +30,7 @@ const Homepage = () => {
       <BestSeller />
       <WhyChooseUs />
       <AboutUs />
+      <FeedbackComp />
     </Box>
   );
 };
